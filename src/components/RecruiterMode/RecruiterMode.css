@@ -1,0 +1,81 @@
+.recruiter-mode {
+
+  position: fixed;
+
+  right: 30px;
+
+  bottom: 30px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+
+  z-index: 1000;
+}
+
+.recruiter-mode a {
+
+  width: 58px;
+
+  height: 58px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 18px;
+
+  background: rgba(255,255,255,0.08);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(12px);
+
+  color: white;
+
+  font-size: 22px;
+
+  text-decoration: none;
+
+  transition: 0.3s ease;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.recruiter-mode a:hover {
+
+  background: #38bdf8;
+
+  color: black;
+
+  transform: translateY(-5px) scale(1.05);
+}
+
+@media (max-width: 768px) {
+
+  .recruiter-mode {
+
+    right: 18px;
+
+    bottom: 18px;
+  }
+
+  .recruiter-mode a {
+
+    width: 52px;
+
+    height: 52px;
+
+    font-size: 20px;
+  }
+}
+
+.hide-recruiter {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+}

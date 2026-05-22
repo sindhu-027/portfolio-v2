@@ -1,0 +1,20 @@
+.app {
+  position: relative;
+}
+
+.bg-glow {
+
+  position: fixed;
+
+  width: 500px;
+  height: 500px;
+
+  background: rgba(56, 189, 248, 0.12);
+
+  filter: blur(140px);
+
+  top: -100px;
+  right: -100px;
+
+  z-index: -1;
+}
